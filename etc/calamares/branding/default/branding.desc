@@ -126,7 +126,7 @@ strings:
     version:             2024.9.23
     shortVersion:        2024.8
     versionedName:       ArchPro
-    bootloaderEntryName: FancyGL
+    bootloaderEntryName: ArchPro
     productUrl:          https://calamares.io/
     supportUrl:          https://github.com/calamares/calamares/wiki
     knownIssuesUrl:      https://github.com/calamares/calamares/issues
@@ -165,7 +165,7 @@ images:
     productIcon:         "squid.png"
     productLogo:         "squid.png"
     # productWallpaper:    "wallpaper.png"
-    productWelcome:      "languages.png"
+    productWelcome:      "arch.png"
 
 # Colors for text and background components.
 #
