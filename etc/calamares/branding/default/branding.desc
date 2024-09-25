@@ -127,7 +127,7 @@ strings:
     shortVersion:        2024.09.1
     versionedName:       ArchPro
     shortVersionedName:  ArchPro
-    bootloaderEntryName: ArchPro
+    #bootloaderEntryName: ArchPro
 
 # These images are loaded from the branding module directory.
 #
@@ -161,7 +161,7 @@ images:
     productIcon:         "squid.png"
     productLogo:         "squid.png"
     # productWallpaper:    "wallpaper.png"
-    productWelcome:      "arch.png"
+    productWelcome:      "welcome1.png"
 
 # Colors for text and background components.
 #
