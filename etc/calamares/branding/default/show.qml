@@ -32,17 +32,19 @@ Presentation
 
         Image {
             id: background
-            source: "welcome1.png"
-            width: parent.width; height: parent.height
-            verticalAlignment: Image.AlignTop
-            fillMode: Image.Stretch
-            anchors.fill: parent
+            source: "squid.png"
+            width: 200; height: 200
+            fillMode: Image.PreserveAspectFit
+            anchors.centerIn: parent
         }
         Text {
             anchors.horizontalCenter: background.horizontalCenter
             anchors.top: background.bottom
-            text: "Welcome to ArchPro Install,"+
-
+            text: "This is a customizable QML slideshow.<br/>"+
+                  "Distributions should provide their own slideshow and list it in <br/>"+
+                  "their custom branding.desc file.<br/>"+
+                  "To create a Calamares presentation in QML, import calamares.slideshow,<br/>"+
+                  "define a Presentation element with as many Slide elements as needed."
             wrapMode: Text.WordWrap
             width: presentation.width
             horizontalAlignment: Text.Center
@@ -50,11 +52,11 @@ Presentation
     }
 
     Slide {
-        centeredText: qsTr("just realx")
+        centeredText: qsTr("This is a second Slide element.")
     }
 
     Slide {
-        centeredText: qsTr("and enjoy!")
+        centeredText: qsTr("This is a third Slide element.")
     }
 
     // When this slideshow is loaded as a V1 slideshow, only
