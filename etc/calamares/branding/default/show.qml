@@ -40,11 +40,7 @@ Presentation
         Text {
             anchors.horizontalCenter: background.horizontalCenter
             anchors.top: background.bottom
-            text: "This is a customizable QML slideshow.<br/>"+
-                  "Distributions should provide their own slideshow and list it in <br/>"+
-                  "their custom branding.desc file.<br/>"+
-                  "To create a Calamares presentation in QML, import calamares.slideshow,<br/>"+
-                  "define a Presentation element with as many Slide elements as needed."
+            text: "ArchPro is going to be installed."
             wrapMode: Text.WordWrap
             width: presentation.width
             horizontalAlignment: Text.Center
@@ -52,11 +48,11 @@ Presentation
     }
 
     Slide {
-        centeredText: qsTr("This is a second Slide element.")
+        centeredText: qsTr("Relax.")
     }
 
     Slide {
-        centeredText: qsTr("This is a third Slide element.")
+        centeredText: qsTr("Enjoy.")
     }
 
     // When this slideshow is loaded as a V1 slideshow, only
