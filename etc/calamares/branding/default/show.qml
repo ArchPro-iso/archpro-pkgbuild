@@ -48,11 +48,11 @@ Presentation
     }
 
     Slide {
-        centeredText: qsTr("Relax.")
+        centeredText: qsTr("Relax")
     }
 
     Slide {
-        centeredText: qsTr("Enjoy.")
+        centeredText: qsTr("Enjoy")
     }
 
     // When this slideshow is loaded as a V1 slideshow, only
