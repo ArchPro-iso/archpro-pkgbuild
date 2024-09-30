@@ -127,7 +127,7 @@ strings:
     shortVersion:        2024.9
     versionedName:       Archpro
     shortVersionedName:  Archpro 2024.9
-   # bootloaderEntryName: Archpro
+    bootloaderEntryName: Arch
 
 
 # These images are loaded from the branding module directory.
