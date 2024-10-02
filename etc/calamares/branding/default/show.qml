@@ -40,7 +40,7 @@ Presentation
         Text {
             anchors.horizontalCenter: background.horizontalCenter
             anchors.top: background.bottom
-            text: "ArchPro is going to be installed."
+            text: "Arch linux is going to be installed."
             wrapMode: Text.WordWrap
             width: presentation.width
             horizontalAlignment: Text.Center
