@@ -22,7 +22,7 @@ Presentation
 
     Timer {
         id: advanceTimer
-        interval: 1000
+        interval: 5000
         running: presentation.activatedInCalamares
         repeat: true
         onTriggered: nextSlide()
@@ -30,30 +30,52 @@ Presentation
 
     Slide {
 
-        Image {
-            id: background
-            source: "squid.png"
-            width: 200; height: 200
-            fillMode: Image.PreserveAspectFit
-            anchors.centerIn: parent
-        }
-        Text {
-            anchors.horizontalCenter: background.horizontalCenter
-            anchors.top: background.bottom
-            text: "Arch linux is going to be installed."
-            wrapMode: Text.WordWrap
-            width: presentation.width
-            horizontalAlignment: Text.Center
-        }
+    anchors.fill: parent
+    anchors.verticalCenterOffset: 0
+
+    Image {
+        id: background1
+        source: "1.png"
+        width: parent.width; height: parent.height
+        verticalAlignment: Image.AlignTop
+        fillMode: Image.Stretch
+        anchors.fill: parent
+    	}
+
+    Text {
+        anchors.horizontalCenter: background1.horizontalCenter
+        anchors.top: background1.bottom
+        text: "Welcome to"
+        wrapMode: Text.WordWrap
+        width: presentation.width
+        horizontalAlignment: Text.Center
+    	}
     }
 
     Slide {
-        centeredText: qsTr("Relax")
+
+    anchors.fill: parent
+    anchors.verticalCenterOffset: 0
+
+    Image {
+        id: background2
+        source: "2.png"
+        width: parent.width; height: parent.height
+        verticalAlignment: Image.AlignTop
+        fillMode: Image.Stretch
+        anchors.fill: parent
+    	}
+
+    Text {
+        anchors.horizontalCenter: background2.horizontalCenter
+        anchors.top: background2.bottom
+        text: "Arch Calamares Installer"
+        wrapMode: Text.WordWrap
+        width: presentation.width
+        horizontalAlignment: Text.Center
+    	}
     }
 
-    Slide {
-        centeredText: qsTr("Enjoy")
-    }
 
     // When this slideshow is loaded as a V1 slideshow, only
     // activatedInCalamares is set, which starts the timer (see above).
